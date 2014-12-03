@@ -1,8 +1,6 @@
 
 <?php
 
-define("APIKEY", "pruebapikey");
-
 class ApiController extends Controller
 {
 	public function actionIndex() {
@@ -19,7 +17,7 @@ class ApiController extends Controller
 	}
 
 /**
- ACTIONS PARA OBTENER LAS CIUDADES Y LOS COMPLEJOS
+ACTIONS PARA OBTENER LAS CIUDADES Y LOS COMPLEJOS
 */
  	private function result($result) {
 		echo json_encode($result);
@@ -34,15 +32,23 @@ class ApiController extends Controller
 			$complejos = Ciudad::model()->getComplejos($ciudad);
 			$this->result(array("success"=>true,"complejos"=>$complejos));
 		}
-		else if ($method == "POST") {
-			$request = file_get_contents('php://input'); //lee los datos de la peticion POST solicitada
-			$request = json_decode($request); // decodifica a json
-			$response = Ciudad::model()->setCiudad($request); // llamada a setGanado y manda un objeto a insertar
-			$this->result(array("success" => true, "message" => "Se guardó correctamente"));
-		}
 		else{
 			$this->result(array("success" => false, "message" => "No se encontró el recurso"));
 		}
+	}
+/**
+ METODO PARA INICIAR UNA NUEVA VENTA 
+*/
+	public function actionIniciaNuevaVenta() {
+			$this->headers();
+			$numBoletos = $_GET['numBoletos'];
+			$horario = $_GET['horario'];
+			$pelicula = $_GET['pelicula'];
+			$numSala = $_GET['numSala'];
+			$tipoSala = $_GET['tipoSala'];
+			$tipoVenta = $_GET['tipoventa'];
+			$venta = Venta::model()->crearNuevaVenta($numBoletos,$horario,$pelicula,$numSala,$tipoSala,$tipoVenta);
+			$this->result(array("success" => true, "message" => "Se creo la venta correctamente"));
 	}
 
 

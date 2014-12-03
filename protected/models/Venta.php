@@ -12,13 +12,20 @@ class Venta extends CActiveRecord
 
 	public function tableName()
 	{
-    	return 'Venta';
+    	return 'ventas';
 	}
 	public static function model($className=__CLASS__)
     {
         return parent::model($className);
     }
+    public static function crearNuevaVenta($numBoletos,$horario,$pelicula,$numSala,$tipoSala,$tipoVenta){
+    	$venta = new Venta;
+		$venta->numBoletos = $numBoletos;
+		$venta->tipoVenta = $tipoVenta;
+		$sala = Asiento::model()-> consultarAsientosPorSala($numSala, $tipoSala);
+    }
     public static function registrarVenta() {
+
 
 	}
 	public static function crearBoletos() {

@@ -361,3 +361,417 @@ Stack trace:
 #12 {main}
 REQUEST_URI=/cineback/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
 ---
+2014/12/01 02:06:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "iniciaNuevaVenta".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('iniciaNuevaVent...')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('iniciaNuevaVent...')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/iniciaNueva...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=//cineBack/index.php/api/iniciaNuevaVenta?numBoletos=5&horario=11:00&pelicula=sinsajo&numSala=5&tipoSala=digitalEspa%C3%B1ol
+---
+2014/12/01 07:26:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "asientosDisponibles".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('asientosDisponi...')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/asientosDis...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=//cineBack/index.php/api/asientosDisponibles?sala=1
+---
+2014/12/01 07:27:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "asientosDisponibles".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('asientosDisponi...')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/asientosDis...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=//cineBack/index.php/api/asientosDisponibles?sala=1
+---
+2014/12/01 07:29:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "asientosDisponibles".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('asientosDisponi...')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Api/asientosDis...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=//cineBack/index.php/Api/asientosDisponibles?sala=1
+---
+2014/12/01 07:30:07 [error] [php] Undefined index: ciudad (C:\wamp\www\cineBack\protected\controllers\ApiController.php:33)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?nombre=Culiac%C3%A1n%22
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 07:30:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "asientosDisponibles".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('asientosDisponi...')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/asientosDis...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cineBack/index.php/api/asientosDisponibles?sala=1
+---
+2014/12/01 07:31:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "asientosDisponibles".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('asientosDisponi...')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/asientosDis...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cineBack/index.php/api/asientosDisponibles?sala=1
+---
+2014/12/01 07:31:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "asientosDisponibles".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('asientosDisponi...')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/asientosDis...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cineBack/index.php/api/asientosDisponibles?sala=1
+---
+2014/12/01 07:33:32 [error] [php] Undefined index: ciudad (C:\wamp\www\cineBack\protected\controllers\ApiController.php:33)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?nombre=Culiac%C3%A1n%22
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 07:33:44 [error] [php] Undefined index: ciudad (C:\wamp\www\cineBack\protected\controllers\ApiController.php:33)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?nombre=Culiac%C3%A1n%22
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 07:34:25 [error] [php] Undefined index: ciudad (C:\wamp\www\cineBack\protected\controllers\ApiController.php:33)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?asientosDisponibles
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 07:34:31 [error] [php] Undefined index: ciudad (C:\wamp\www\cineBack\protected\controllers\ApiController.php:33)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?asientosDisponibles
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 07:34:32 [error] [php] Undefined index: ciudad (C:\wamp\www\cineBack\protected\controllers\ApiController.php:33)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?asientosDisponibles
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 07:34:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "asientosDisponibles".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('asientosDisponi...')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/asientosDis...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cineBack/index.php/api/asientosDisponibles
+---
+2014/12/01 07:35:04 [error] [php] Undefined index: sala (C:\wamp\www\cineBack\protected\controllers\ApiController.php:61)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/asientosDisponibles
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (61)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 07:36:59 [error] [php] Missing argument 2 for Sala::muestraAsientosDisponibles(), called in C:\wamp\www\cineBack\protected\controllers\ApiController.php on line 62 and defined (C:\wamp\www\cineBack\protected\models\Sala.php:17)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/asientosDisponibles?sala=1
+in C:\wamp\www\cineBack\protected\models\Sala.php (17)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (62)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 07:48:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.sala' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `sala`.
+in C:\wamp\www\cineBack\protected\models\Sala.php (24)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (62)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 07:48:59 [error] [exception.CDbException] exception 'CDbException' with message 'The table "sala" for active record class "Sala" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Sala))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Sala.php(24): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\controllers\ApiController.php(62): Sala::muestraAsientosDisponibles('1')
+#6 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionAsientosDisponibles()
+#7 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/asientosDis...')
+#12 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/cineBack/index.php/api/asientosDisponibles?sala=1
+---
+2014/12/01 07:49:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Salas.numSala' in 'where clause'. The SQL statement executed was: SELECT t.* FROM `Salas` `t` INNER JOIN Asientos ON Asientos.id_asiento = t.asiento WHERE Salas.numSala = :value.
+in C:\wamp\www\cineBack\protected\models\Sala.php (24)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (62)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 07:49:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Salas.numSala' in 'where clause'. The SQL statement executed was: SELECT t.* FROM `Salas` `t` INNER JOIN Asientos ON Asientos.id_asiento = t.asiento WHERE Salas.numSala = :value' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Sala.php(24): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\controllers\ApiController.php(62): Sala::muestraAsientosDisponibles('1')
+#5 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionAsientosDisponibles()
+#6 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#10 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/asientosDis...')
+#11 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cineBack/index.php/api/asientosDisponibles?sala=1
+---
+2014/12/01 07:49:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Salas.numSala' in 'where clause'. The SQL statement executed was: SELECT t.* FROM `Salas` `t` INNER JOIN Asientos ON Asientos.id_asiento = t.asiento WHERE Salas.numSala = :value.
+in C:\wamp\www\cineBack\protected\models\Sala.php (24)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (62)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 07:49:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Salas.numSala' in 'where clause'. The SQL statement executed was: SELECT t.* FROM `Salas` `t` INNER JOIN Asientos ON Asientos.id_asiento = t.asiento WHERE Salas.numSala = :value' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Sala.php(24): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\controllers\ApiController.php(62): Sala::muestraAsientosDisponibles('1')
+#5 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionAsientosDisponibles()
+#6 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#10 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/asientosDis...')
+#11 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cineBack/index.php/api/asientosDisponibles?sala=1
+---
+2014/12/01 08:08:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.asiento' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Asiento`.
+in C:\wamp\www\cineBack\protected\models\Sala.php (24)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (62)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 08:08:56 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Asiento" for active record class "Asiento" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Asiento))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Sala.php(24): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\controllers\ApiController.php(62): Sala::muestraAsientosDisponibles('1')
+#6 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionAsientosDisponibles()
+#7 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/asientosDis...')
+#12 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/cineBack/index.php/api/asientosDisponibles?sala=1
+---
+2014/12/01 08:09:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.numSala' in 'where clause'. The SQL statement executed was: SELECT Asientos.id_asiento FROM `Asientos` `t` LEFT JOIN Asientos ON Asientos.id_asiento = t.asiento WHERE t.numSala = :value.
+in C:\wamp\www\cineBack\protected\models\Sala.php (24)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (62)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 08:09:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.numSala' in 'where clause'. The SQL statement executed was: SELECT Asientos.id_asiento FROM `Asientos` `t` LEFT JOIN Asientos ON Asientos.id_asiento = t.asiento WHERE t.numSala = :value' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Sala.php(24): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\controllers\ApiController.php(62): Sala::muestraAsientosDisponibles('1')
+#5 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionAsientosDisponibles()
+#6 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#10 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/asientosDis...')
+#11 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cineBack/index.php/api/asientosDisponibles?sala=1
+---
+2014/12/01 08:09:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `Asientos` `t` LEFT JOIN Asientos ON Asientos.id_asiento = t.asiento WHERE ' at line 1. The SQL statement executed was: SELECT t* FROM `Asientos` `t` LEFT JOIN Asientos ON Asientos.id_asiento = t.asiento WHERE t.numSala = :value.
+in C:\wamp\www\cineBack\protected\models\Sala.php (24)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (62)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 08:09:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `Asientos` `t` LEFT JOIN Asientos ON Asientos.id_asiento = t.asiento WHERE ' at line 1. The SQL statement executed was: SELECT t* FROM `Asientos` `t` LEFT JOIN Asientos ON Asientos.id_asiento = t.asiento WHERE t.numSala = :value' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Sala.php(24): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\controllers\ApiController.php(62): Sala::muestraAsientosDisponibles('1')
+#5 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionAsientosDisponibles()
+#6 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#10 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/asientosDis...')
+#11 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cineBack/index.php/api/asientosDisponibles?sala=1
+---
+2014/12/01 08:10:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `Asientos` `t` LEFT JOIN Asientos ON t.id_asiento = Salas.asiento WHERE Sal' at line 1. The SQL statement executed was: SELECT t* FROM `Asientos` `t` LEFT JOIN Asientos ON t.id_asiento = Salas.asiento WHERE Salas.numSala = :value.
+in C:\wamp\www\cineBack\protected\models\Sala.php (24)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (62)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 08:10:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `Asientos` `t` LEFT JOIN Asientos ON t.id_asiento = Salas.asiento WHERE Sal' at line 1. The SQL statement executed was: SELECT t* FROM `Asientos` `t` LEFT JOIN Asientos ON t.id_asiento = Salas.asiento WHERE Salas.numSala = :value' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Sala.php(24): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\controllers\ApiController.php(62): Sala::muestraAsientosDisponibles('1')
+#5 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionAsientosDisponibles()
+#6 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#10 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/asientosDis...')
+#11 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cineBack/index.php/api/asientosDisponibles?sala=1
+---
+2014/12/01 08:11:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Salas.numSala' in 'where clause'. The SQL statement executed was: SELECT t.* FROM `Asientos` `t` LEFT JOIN Asientos ON t.id_asiento = Salas.asiento WHERE Salas.numSala = :value.
+in C:\wamp\www\cineBack\protected\models\Sala.php (24)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (62)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 08:11:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Salas.numSala' in 'where clause'. The SQL statement executed was: SELECT t.* FROM `Asientos` `t` LEFT JOIN Asientos ON t.id_asiento = Salas.asiento WHERE Salas.numSala = :value' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Sala.php(24): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\controllers\ApiController.php(62): Sala::muestraAsientosDisponibles('1')
+#5 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionAsientosDisponibles()
+#6 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#10 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/asientosDis...')
+#11 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cineBack/index.php/api/asientosDisponibles?sala=1
+---
+2014/12/01 21:02:06 [error] [php] Undefined index: ciudad (C:\wamp\www\cineBack\protected\controllers\ApiController.php:33)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/ciudad?sala=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 21:02:06 [error] [php] Undefined index: ciudad (C:\wamp\www\cineBack\protected\controllers\ApiController.php:33)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/ciudad?sala=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/01 21:02:07 [error] [php] Undefined index: ciudad (C:\wamp\www\cineBack\protected\controllers\ApiController.php:33)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/ciudad?sala=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/02 00:34:56 [error] [php] Undefined index: sala (C:\wamp\www\cineBack\protected\controllers\ApiController.php:61)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/AsientosDisponibles?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (61)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/02 04:15:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Salas.asiento' in 'on clause'. The SQL statement executed was: SELECT t.* FROM `Asientos` `t` INNER JOIN Salas ON t.id_asiento = Salas.asiento WHERE Salas.numSala = :value.
+in C:\wamp\www\cineBack\protected\models\Asiento.php (26)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (63)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/02 04:15:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Salas.asiento' in 'on clause'. The SQL statement executed was: SELECT t.* FROM `Asientos` `t` INNER JOIN Salas ON t.id_asiento = Salas.asiento WHERE Salas.numSala = :value' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Asiento.php(26): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\controllers\ApiController.php(63): Asiento::consultarAsientosPorSala('1')
+#5 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionAsientosDisponibles()
+#6 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('asientosDisponi...')
+#10 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/asientosDis...')
+#11 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cineBack/index.php/api/asientosDisponibles?sala=1
+---
