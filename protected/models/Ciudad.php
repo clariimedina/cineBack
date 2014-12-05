@@ -26,7 +26,7 @@ class Ciudad extends CActiveRecord
 
 		return $this->findAll($query);
     }
-    	public function setCiudad($request) {
+    public function setCiudad($request) {
 		$ciudad = new Ciudad;
 		$ciudad->id_ciudad = $request->id_ciudad;
 		$ciudad->nombre = $request->nombre;
