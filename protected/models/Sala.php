@@ -14,10 +14,11 @@ class Sala extends CActiveRecord
     {
         return parent::model($className);
     }
-    public static function muestraAsientosDisponibles($numSala) {
-	  
+    public static function muestraAsientosDisponibles($numSala, $tipoSala) {
+		$asientos = new Asiento::model()->consultarAsientosPorSala($numSala);
+		return (array("asientos"=>$asientos));	  
 
-	    }
+	}
 	
 
 

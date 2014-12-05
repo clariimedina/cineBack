@@ -775,3 +775,27 @@ Stack trace:
 #13 {main}
 REQUEST_URI=/cineBack/index.php/api/asientosDisponibles?sala=1
 ---
+2014/12/03 07:17:46 [error] [php] Undefined index: tipoventa (C:\wamp\www\cineBack\protected\controllers\ApiController.php:49)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/IniciaNuevaVenta?numBoletos=3&horario=11:00&pelicula=sinsajo&numSala=5&tipoSala=digital&tipoVenta=compra
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (49)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/03 07:33:24 [error] [php] Undefined variable: id (C:\wamp\www\cineBack\protected\models\Venta.php:20)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/IniciaNuevaVenta?numBoletos=3&horario=11:00&pelicula=sinsajo&numSala=1&tipoSala=digital&tipoVenta=compra
+in C:\wamp\www\cineBack\protected\models\Venta.php (20)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (50)
+in C:\wamp\www\cineBack\index.php (13)

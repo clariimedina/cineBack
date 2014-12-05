@@ -46,9 +46,9 @@ ACTIONS PARA OBTENER LAS CIUDADES Y LOS COMPLEJOS
 			$pelicula = $_GET['pelicula'];
 			$numSala = $_GET['numSala'];
 			$tipoSala = $_GET['tipoSala'];
-			$tipoVenta = $_GET['tipoventa'];
+			$tipoVenta = $_GET['tipoVenta'];
 			$venta = Venta::model()->crearNuevaVenta($numBoletos,$horario,$pelicula,$numSala,$tipoSala,$tipoVenta);
-			$this->result(array("success" => true, "message" => "Se creo la venta correctamente"));
+			$this->result(array("success" => true, "venta" => $venta));
 	}
 
 
