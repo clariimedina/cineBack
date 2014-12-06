@@ -29,8 +29,8 @@ ACTIONS PARA OBTENER LAS CIUDADES Y LOS COMPLEJOS
 		$method = $_SERVER['REQUEST_METHOD'];
 		if($method == 'GET'){
 			$ciudad = $_GET['ciudad'];
-			$complejos = Ciudad::model()->getComplejos($ciudad);
-			$this->result(array("success"=>true,"complejos"=>$complejos));
+			$complejos = Ciudades::model()->getComplejos($ciudad);
+			$this->result(array("success"=>true, "complejos"=>$complejos));
 		}
 		else{
 			$this->result(array("success" => false, "message" => "No se encontró el recurso"));

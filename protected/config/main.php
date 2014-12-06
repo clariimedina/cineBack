@@ -81,7 +81,7 @@ return array(
     ),
 	// configuracion para la conexion con la base de datos
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=source',
+			'connectionString' => 'mysql:host=localhost;dbname=movietheater',
             'emulatePrepare' => true,
             'username' => 'root',
             'password' => '',
