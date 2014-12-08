@@ -13,16 +13,22 @@ class Asiento extends CActiveRecord
     }
     public static function consultarAsientosPorSala($numSala) {
         $criteria = new CDbCriteria;
-            $criteria->select = 't.id_asiento,t.disponibilidad';
-            $criteria->join ='INNER JOIN Salas ON t.id_sala = Salas.id_sala';
-            $criteria->condition = 'Salas.numSala = :value';
-            $criteria->params = array(":value" => $numSala);
-            return Asiento::model()->findAll($criteria);
+        $criteria->select = 't.id_asiento,t.disponibilidad';
+        $criteria->join ='INNER JOIN Salas ON t.id_sala = Salas.id_sala';
+        $criteria->condition = 'Salas.id_sala = :value';
+        $criteria->params = array(":value" => $numSala);
+        return Asiento::model()->findAll($criteria);
     }
     public function relations() {
         return array(
             'Sala' => array(self::BELONGS_TO, 'Salas', 'id_sala')
         );
+    }
+    public function encontrarAsiento($id) {
+        
+
+        return Asiento::model()->findByPk($id);
+
     }
     public static function apartar() {
     }

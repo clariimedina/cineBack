@@ -2,11 +2,14 @@
 
 class Boleto extends CActiveRecord
 {
-	public $folio;
+	public $folio=1;
 	public $horario;
 	public $pelicula;
-	public $sala;
-	public $asiento;
+	public $numsala;
+	public $id_asiento;
+    public $id_sala;
+    public $id_venta;
+    public $tipoSala;
 
 
 	public function tableName()
@@ -18,11 +21,15 @@ class Boleto extends CActiveRecord
         return parent::model($className);
     }
 
-    public static function colocar() {
+    public static function crearBoleto($horario,$pelicula,$numSala,$tipoSala,$asientos) {
+        $Boleto = new Boleto;
+        $Boleto->folio++;
+        $Boleto->horario = $horario;
+        $Boleto->pelicula = $pelicula;
+        $Boleto->sala = $numSala;
+        $Boleto->tipoSala = $tipoSala;
 
-    }
-    public static function quitar() {
-    	
+        return $Boleto;
     }
 }
 

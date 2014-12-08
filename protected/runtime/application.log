@@ -2898,3 +2898,131 @@ REQUEST_URI=/cineBack/index.php/api/IniciaNuevaVenta?numBoletos=3&horario=11:00&
 in C:\wamp\www\cineBack\protected\models\Sala.php (53)
 in C:\wamp\www\cineBack\protected\models\Venta.php (23)
 in C:\wamp\www\cineBack\protected\controllers\ApiController.php (51)
+2014/12/08 05:50:36 [error] [php] unserialize(): Error at offset 0 of 9 bytes (C:\wamp\www\cineBack\protected\controllers\ApiController.php:72)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/AsientosSeleccionados?seleccionados=%22+arrayId
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (72)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/08 05:58:29 [error] [php] unserialize() expects parameter 1 to be string, array given (C:\wamp\www\cineBack\protected\controllers\ApiController.php:75)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/AsientosSeleccionados?seleccionados=%22+arrayId
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (75)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/08 05:59:47 [error] [php] unserialize(): Error at offset 0 of 9 bytes (C:\wamp\www\cineBack\protected\controllers\ApiController.php:75)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/AsientosSeleccionados?seleccionados=%22+arrayId
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (75)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/08 05:59:53 [error] [php] unserialize(): Error at offset 0 of 9 bytes (C:\wamp\www\cineBack\protected\controllers\ApiController.php:75)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/AsientosSeleccionados?seleccionados=%22+arrayId
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (75)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/08 06:03:06 [error] [php] Undefined index: arrayId (C:\wamp\www\cineBack\protected\controllers\ApiController.php:73)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/AsientosSeleccionados?seleccionados=%22+arrayId
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (73)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/08 06:03:41 [error] [php] Undefined index: arrayId (C:\wamp\www\cineBack\protected\controllers\ApiController.php:73)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/AsientosSeleccionados
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (73)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/08 06:06:57 [error] [php] Undefined index: arrayId (C:\wamp\www\cineBack\protected\controllers\ApiController.php:73)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/AsientosSeleccionados
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (73)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/08 07:29:59 [error] [exception.CException] exception 'CException' with message 'Venta and its behaviors do not have a method or closure named "obtieneAsientos".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('obtieneAsientos', Array)
+#1 C:\wamp\www\cineBack\protected\controllers\ApiController.php(76): CActiveRecord->__call('obtieneAsientos', Array)
+#2 C:\wamp\www\cineBack\protected\controllers\ApiController.php(76): Venta->obtieneAsientos(Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ApiController->actionAsientosSeleccionados()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('AsientosSelecci...')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/AsientosSel...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/cineBack/index.php/api/AsientosSeleccionados
+HTTP_REFERER=http://localhost:8080/MovieTheater/compraBoletos.php?horario=11:00:00&pelicula=Los%20juegos%20del%20Hambre&numSala=1&tipoSala=Digital
+---
+2014/12/08 07:31:17 [error] [exception.CException] exception 'CException' with message 'Venta and its behaviors do not have a method or closure named "obtieneAsientos".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('obtieneAsientos', Array)
+#1 C:\wamp\www\cineBack\protected\controllers\ApiController.php(76): CActiveRecord->__call('obtieneAsientos', Array)
+#2 C:\wamp\www\cineBack\protected\controllers\ApiController.php(76): Venta->obtieneAsientos(Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ApiController->actionAsientosSeleccionados()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('AsientosSelecci...')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/AsientosSel...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/cineBack/index.php/api/AsientosSeleccionados
+HTTP_REFERER=http://localhost:8080/MovieTheater/compraBoletos.php?horario=11:00:00&pelicula=Los%20juegos%20del%20Hambre&numSala=1&tipoSala=Digital
+---
+2014/12/08 08:09:50 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\cineBack\protected\models\Sala.php:26)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/AsientosSeleccionados
+in C:\wamp\www\cineBack\protected\models\Sala.php (26)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (75)
+in C:\wamp\www\cineBack\index.php (13)

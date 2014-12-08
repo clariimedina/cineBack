@@ -2,9 +2,14 @@
 
 class Venta extends CActiveRecord
 {
-	public $id=1;
+	public $id_venta=1;
 	public $numBoletos;
 	public $tipoVenta;
+    public $horario;
+    public $pelicula;
+    public $numSala;
+    public $tipoSala;
+    public $pago;
 
 	public function tableName()
 	{
@@ -19,10 +24,22 @@ class Venta extends CActiveRecord
     	$venta = new Venta;
     	$venta->id++;
 		$venta->numBoletos = $numBoletos;
+        $venta->horario = $horario;
 		$venta->tipoVenta = $tipoVenta;
+        $venta->pelicula = $pelicula;
+        $venta->numSala = $numSala;
+        $venta->tipoSala = $tipoSala;
+        $venta->save();
 		$sala = Sala::model()-> consultarSala($numSala, $tipoSala);
 		return (array("Salas"=>$sala));
     }
+
+    public static function obtieneAsientos($asientos) {
+        $boleto = Boleto::model()->crearBoleto($id_venta,$asientos);
+
+        return $venta;
+    }
+
     public static function registrarVenta() {
 
 

@@ -63,4 +63,27 @@ ACTIONS PARA OBTENER LAS CIUDADES Y LOS COMPLEJOS
 		$peliInfo = Sala::model()->getFechas($id_sala);
 		$this->result(array("success" => true, "peliInfo" => $peliInfo));
 	}
+
+/**
+ FUNCION PARA RECIBIR LOS ASIENTOS SELECCIONADOS
+*/
+	public function actionAsientosSeleccionados() {
+		$this->headers();
+		
+		$asientosSeleccionados = $_POST['arrayId'];
+		$response1 = Sala::model()-> buscaAsiento($asientosSeleccionados);
+		if($response1 == true){
+			$venta = Venta::model()->obtieneAsientos($asientosSeleccionados);
+			$this->result(array("success"=> $response1, "boleto" =>$venta));
+		}
+		else
+			$this->result(array("success"=>false));
+	}
+
+/**
+ FUNCION PARA ENVIAR DATOS DEL FORMULARIO A LA VENTA
+*/
+	public function actionDarInformacion() {
+		
+	}
 }
