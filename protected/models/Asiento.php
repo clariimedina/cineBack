@@ -15,7 +15,7 @@ class Asiento extends CActiveRecord
         $criteria = new CDbCriteria;
             $criteria->select = 't.id_asiento,t.disponibilidad';
             $criteria->join ='INNER JOIN Salas ON t.id_sala = Salas.id_sala';
-            $criteria->condition = 'Salas.numSala = :value';
+            $criteria->condition = 'Salas.id_sala = :value';
             $criteria->params = array(":value" => $numSala);
             return Asiento::model()->findAll($criteria);
     }

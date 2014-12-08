@@ -2826,3 +2826,14 @@ REQUEST_URI=/cineBack/index.php/api/IniciaNuevaVenta?numBoletos=3&horario=11:00&
 in C:\wamp\www\cineBack\protected\models\Sala.php (53)
 in C:\wamp\www\cineBack\protected\models\Venta.php (23)
 in C:\wamp\www\cineBack\protected\controllers\ApiController.php (51)
+2014/12/08 05:50:00 [error] [php] Undefined index: numBoletos (C:\wamp\www\cineBack\protected\controllers\ApiController.php:45)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/IniciaNuevaVenta
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (45)
+in C:\wamp\www\cineBack\index.php (13)
