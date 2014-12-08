@@ -14,6 +14,7 @@ class ApiController extends Controller
 		header('Access-Control-Allow-Origin:*');
     	header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
     	header('Access-Control-Allow-Headers: Content-Type, apikey');
+    	header('Content-Type: application/json');
 	}
 
 /**
@@ -49,6 +50,16 @@ ACTIONS PARA OBTENER LAS CIUDADES Y LOS COMPLEJOS
 			$tipoVenta = $_GET['tipoVenta'];
 			$venta = Venta::model()->crearNuevaVenta($numBoletos,$horario,$pelicula,$numSala,$tipoSala,$tipoVenta);
 			$this->result(array("success" => true, "venta" => $venta));
+	}
+
+	public function actionPeliculas() {
+		$this->headers();
+		$id_pelicula = $_GET['id_pelicula'];
+		$numSala=$_GET['numSala'];
+		$id_sala = $_GET['id_sala'];
+
+		$peliInfo = Sala::model()->getFechas($id_sala);
+		$this->result(array("success" => true, "peliInfo" => $peliInfo));
 	}
 
 
