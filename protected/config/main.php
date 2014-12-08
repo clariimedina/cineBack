@@ -33,7 +33,7 @@ return array(
 			'allowAutoLogin'=>true,
 		),
 		// uncomment the following to enable URLs in path-format
-		
+		//Descomente url manager
 		'urlManager'=>array(
 		    'urlFormat'=>'path',
 		    'rules'=>array(

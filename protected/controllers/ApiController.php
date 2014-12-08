@@ -64,6 +64,7 @@ ACTIONS PARA OBTENER LAS CIUDADES Y LOS COMPLEJOS
 		$this->result(array("success" => true, "peliInfo" => $peliInfo));
 	}
 
+<<<<<<< HEAD
 	blic function actionObtenerCodigo()
 	{	
 		$this->headers();
@@ -71,6 +72,28 @@ ACTIONS PARA OBTENER LAS CIUDADES Y LOS COMPLEJOS
 
 		$respuestaRes = Pago::model()-> buscarCodReserva($codReserva);
 		$this->result($respuestaRes);
+=======
+/**
+ FUNCION PARA RECIBIR LOS ASIENTOS SELECCIONADOS
+*/
+	public function actionAsientosSeleccionados() {
+		$this->headers();
+		
+		$asientosSeleccionados = $_POST['arrayId'];
+		$response1 = Sala::model()-> buscaAsiento($asientosSeleccionados);
+		if($response1 == true){
+			$venta = Venta::model()->obtieneAsientos($asientosSeleccionados);
+			$this->result(array("success"=> $response1, "boleto" =>$venta));
+		}
+		else
+			$this->result(array("success"=>false));
+>>>>>>> fa4b95e5f80ad2a62bb5e843b4df6443c3b74289
 	}
 
+/**
+ FUNCION PARA ENVIAR DATOS DEL FORMULARIO A LA VENTA
+*/
+	public function actionDarInformacion() {
+		
+	}
 }
