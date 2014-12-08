@@ -63,6 +63,13 @@ ACTIONS PARA OBTENER LAS CIUDADES Y LOS COMPLEJOS
 		$peliInfo = Sala::model()->getFechas($id_sala);
 		$this->result(array("success" => true, "peliInfo" => $peliInfo));
 	}
+	public function AsientosSeleccionados() {
+
+		$id_venta = $_POST['id_venta'];
+		$asientosSelec = $_POST['arrayId'];
+
+		
+	}
 
 
 }
