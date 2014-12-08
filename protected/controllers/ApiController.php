@@ -72,4 +72,35 @@ ACTIONS PARA OBTENER LAS CIUDADES Y LOS COMPLEJOS
 	}
 
 
+	public function actionObtenerCodigo()
+	{	
+		$this->headers();
+		$codReserva= $_GET['codReserva'];
+
+		$respuestaRes = Pago::model()-> buscarCodReserva($codReserva);
+		$this->result($respuestaRes);
+	}
+
+/**
+ FUNCION PARA RECIBIR LOS ASIENTOS SELECCIONADOS
+*/
+	public function actionAsientosSeleccionados() {
+		$this->headers();
+		
+		$asientosSeleccionados = $_POST['arrayId'];
+		$response1 = Sala::model()-> buscaAsiento($asientosSeleccionados);
+		if($response1 == true){
+			$venta = Venta::model()->obtieneAsientos($asientosSeleccionados);
+			$this->result(array("success"=> $response1, "boleto" =>$venta));
+		}
+		else
+			$this->result(array("success"=>false));
+	}
+
+/**
+ FUNCION PARA ENVIAR DATOS DEL FORMULARIO A LA VENTA
+*/
+	public function actionDarInformacion() {
+		
+	}
 }

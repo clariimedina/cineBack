@@ -21,6 +21,20 @@ class Sala extends CActiveRecord
 		return (array("asientos"=>$asientos));	  
 
 	}
+
+    public static function buscaAsiento ($asientos) {
+        foreach ($asientos as $asiento) {
+            $resultado = Asiento::model()->encontrarAsiento($asiento);
+            if($resultado['disponibilidad'] == 1)
+                 $respuesta = true;
+            else {
+                    $respuesta = false;
+                    break;
+                }
+
+        }
+        return $respuesta;
+    }
 	
 	public static function getSalas ($id){
 		$criteria = new CDbCriteria;

@@ -34,6 +34,22 @@ class Pago extends CActiveRecord
     public static function crearComprobanteReserva() {
     	
     }
+    public static function buscarCodReserva($codReserva)
+    {
+        $cod=$codReserva;
+        $Criteria= new CDbCriteria();
+        $Criteria->condition = "codReserva = :codReserva";
+        $Criteria->params = array(":codReserva" => $cod);
+        $Resultado= Pago::model()->findAll($Criteria);
+
+        if($Resultado==null)
+        {
+            return "La clave de reserva no existe";
+        }
+
+        else
+            return true;
+    }
 
 
 }
