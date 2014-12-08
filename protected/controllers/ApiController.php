@@ -64,5 +64,13 @@ ACTIONS PARA OBTENER LAS CIUDADES Y LOS COMPLEJOS
 		$this->result(array("success" => true, "peliInfo" => $peliInfo));
 	}
 
+	blic function actionObtenerCodigo()
+	{	
+		$this->headers();
+		$codReserva= $_GET['codReserva'];
+
+		$respuestaRes = Pago::model()-> buscarCodReserva($codReserva);
+		$this->result($respuestaRes);
+	}
 
 }
