@@ -48,10 +48,12 @@ ACTIONS PARA OBTENER LAS CIUDADES Y LOS COMPLEJOS
 			$numSala = $_GET['numSala'];
 			$tipoSala = $_GET['tipoSala'];
 			$tipoVenta = $_GET['tipoVenta'];
-			$venta = Venta::model()->crearNuevaVenta($numBoletos,$horario,$pelicula,$numSala,$tipoSala,$tipoVenta);
+			$venta= Venta::model()->crearNuevaVenta($numBoletos,$horario,$pelicula,$numSala,$tipoSala,$tipoVenta);
 			$this->result(array("success" => true, "venta" => $venta));
 	}
-
+/**
+ FUNCION PARA OBTENER LAS PELICULAS POR SALA
+*/
 	public function actionPeliculas() {
 		$this->headers();
 		$id_pelicula = $_GET['id_pelicula'];

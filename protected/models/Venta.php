@@ -20,8 +20,8 @@ class Venta extends CActiveRecord
     	$venta->id++;
 		$venta->numBoletos = $numBoletos;
 		$venta->tipoVenta = $tipoVenta;
-		$sala = Asiento::model()-> consultarAsientosPorSala($numSala, $tipoSala);
-		return (array("complejos"=>$sala));
+		$sala = Sala::model()-> consultarSala($numSala, $tipoSala);
+		return (array("Salas"=>$sala));
     }
     public static function registrarVenta() {
 

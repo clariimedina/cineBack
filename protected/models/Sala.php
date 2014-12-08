@@ -49,6 +49,9 @@ class Sala extends CActiveRecord
             return $resultados;
 
 	}
+	public static function consultarSala($numSala, $tipoSala) {
+		return Asiento::model()->consultarAsientosPorSala($numSala,$tipoSala);
+	}
 	
 
 

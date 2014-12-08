@@ -2786,3 +2786,43 @@ Stack trace:
 REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1&id_sala=1
 in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
 in C:\wamp\www\cineBack\index.php (13)
+2014/12/08 01:49:21 [error] [php] Undefined variable: venta (C:\wamp\www\cineBack\protected\models\Venta.php:19)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/IniciaNuevaVenta?numBoletos=1&horario=11:00:00&pelicula=Los%20juegos%20del%20Hambre&numSala=1&tipoSala=Digital&tipoVenta=Compra
+in C:\wamp\www\cineBack\protected\models\Venta.php (19)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (52)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/08 01:49:34 [error] [php] Undefined variable: venta (C:\wamp\www\cineBack\protected\models\Venta.php:19)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/IniciaNuevaVenta?numBoletos=3&horario=11:00&pelicula=sinsajo&numSala=1&tipoSala=digital&tipoVenta=compra
+in C:\wamp\www\cineBack\protected\models\Venta.php (19)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (52)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/08 02:05:48 [error] [php] Undefined variable: num (C:\wamp\www\cineBack\protected\models\Sala.php:53)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionIniciaNuevaVenta()
+#1 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#3 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#5 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/IniciaNuevaVenta?numBoletos=3&horario=11:00&pelicula=sinsajo&numSala=1&tipoSala=digital&tipoVenta=compra
+in C:\wamp\www\cineBack\protected\models\Sala.php (53)
+in C:\wamp\www\cineBack\protected\models\Venta.php (23)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (51)
