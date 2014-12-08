@@ -6,7 +6,6 @@ class Venta extends CActiveRecord
 	public $numBoletos;
 	public $tipoVenta;
 
-
 	public function tableName()
 	{
     	return 'ventas';
@@ -15,6 +14,7 @@ class Venta extends CActiveRecord
     {
         return parent::model($className);
     }
+
     public static function crearNuevaVenta($numBoletos,$horario,$pelicula,$numSala,$tipoSala,$tipoVenta){
     	$venta = new Venta;
     	$venta->id++;

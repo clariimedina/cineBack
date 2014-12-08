@@ -40,16 +40,18 @@ ACTIONS PARA OBTENER LAS CIUDADES Y LOS COMPLEJOS
  METODO PARA INICIAR UNA NUEVA VENTA 
 */
 	public function actionIniciaNuevaVenta() {
-			$this->headers();
-			$numBoletos = $_GET['numBoletos'];
-			$horario = $_GET['horario'];
-			$pelicula = $_GET['pelicula'];
-			$numSala = $_GET['numSala'];
-			$tipoSala = $_GET['tipoSala'];
-			$tipoVenta = $_GET['tipoVenta'];
-			$venta = Venta::model()->crearNuevaVenta($numBoletos,$horario,$pelicula,$numSala,$tipoSala,$tipoVenta);
-			$this->result(array("success" => true, "venta" => $venta));
+		$this->headers();
+		$numBoletos = $_GET['numBoletos'];
+		$horario = $_GET['horario'];
+		$pelicula = $_GET['pelicula'];
+		$numSala = $_GET['numSala'];
+		$tipoSala = $_GET['tipoSala'];
+		$tipoVenta = $_GET['tipoVenta'];
+		$venta = Venta::model()->crearNuevaVenta($numBoletos,$horario,$pelicula,$numSala,$tipoSala,$tipoVenta);
+		$this->result(array("success" => true, "venta" => $venta));
 	}
-
-
 }
+
+
+//nueva action dar informacion cliente
+//capturo la info y lo envio a venta
