@@ -24,7 +24,7 @@ class Complejos extends CActiveRecord
             $criteria->params = array(":value" => $ciudad);
             $respuestas = Complejos::model()->findAll($criteria);
             foreach ($respuestas as $respuesta) {
-                $respuesta['salaComplejos'] =Sala::model()->getSalas($respuesta['id_complejo']);
+                $respuesta['peliculas'] =Peliculas::model()->getPeliculas($respuesta['numSalas']);
             }
             return $respuestas;
     }

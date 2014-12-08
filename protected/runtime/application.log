@@ -1258,3 +1258,1643 @@ Stack trace:
 >>>>>>> 00253f101100b4420b89502c87a381d9c8d201b5
 REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
 ---
+2014/12/06 22:12:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 6.
+in C:\wamp\www\cineBack\protected\models\Peliculas.php (35)
+in C:\wamp\www\cineBack\protected\models\Complejos.php (28)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (20)
+2014/12/06 22:12:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 6' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Peliculas.php(35): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(28): Peliculas::getPeliculas('6')
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(20): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(32): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+HTTP_REFERER=http://localhost/MovieTheater/cartelera.php?ciudad=Culiac%C3%A1n
+---
+2014/12/06 22:13:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 6.
+in C:\wamp\www\cineBack\protected\models\Peliculas.php (35)
+in C:\wamp\www\cineBack\protected\models\Complejos.php (28)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (20)
+2014/12/06 22:13:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 6' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Peliculas.php(35): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(28): Peliculas::getPeliculas('6')
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(20): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(32): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+HTTP_REFERER=http://localhost/MovieTheater/cartelera.php?ciudad=Culiac%C3%A1n
+---
+2014/12/06 22:13:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 0.
+in C:\wamp\www\cineBack\protected\models\Peliculas.php (35)
+in C:\wamp\www\cineBack\protected\models\Complejos.php (28)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (20)
+2014/12/06 22:13:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 0' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Peliculas.php(35): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(28): Peliculas::getPeliculas('6')
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(20): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(32): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+HTTP_REFERER=http://localhost/MovieTheater/cartelera.php?ciudad=Culiac%C3%A1n
+---
+2014/12/06 22:13:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 0.
+in C:\wamp\www\cineBack\protected\models\Peliculas.php (35)
+in C:\wamp\www\cineBack\protected\models\Complejos.php (28)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (20)
+2014/12/06 22:13:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 0' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Peliculas.php(35): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(28): Peliculas::getPeliculas('6')
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(20): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(32): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+HTTP_REFERER=http://localhost/MovieTheater/cartelera.php?ciudad=Culiac%C3%A1n
+---
+2014/12/06 22:13:17 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 0.
+in C:\wamp\www\cineBack\protected\models\Peliculas.php (35)
+in C:\wamp\www\cineBack\protected\models\Complejos.php (28)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (20)
+2014/12/06 22:13:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 0' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Peliculas.php(35): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(28): Peliculas::getPeliculas('6')
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(20): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(32): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+HTTP_REFERER=http://localhost/MovieTheater/cartelera.php?ciudad=Culiac%C3%A1n
+---
+2014/12/06 22:13:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 0.
+in C:\wamp\www\cineBack\protected\models\Peliculas.php (35)
+in C:\wamp\www\cineBack\protected\models\Complejos.php (28)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (20)
+2014/12/06 22:13:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 0' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Peliculas.php(35): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(28): Peliculas::getPeliculas('6')
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(20): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(32): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/06 22:14:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 6.
+in C:\wamp\www\cineBack\protected\models\Peliculas.php (35)
+in C:\wamp\www\cineBack\protected\models\Complejos.php (28)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (20)
+2014/12/06 22:14:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 6' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Peliculas.php(35): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(28): Peliculas::getPeliculas('6')
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(20): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(32): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/06 22:14:44 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 6.
+in C:\wamp\www\cineBack\protected\models\Peliculas.php (35)
+in C:\wamp\www\cineBack\protected\models\Complejos.php (28)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (20)
+2014/12/06 22:14:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 6' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Peliculas.php(35): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(28): Peliculas::getPeliculas('6')
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(20): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(32): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/06 22:15:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 5.
+in C:\wamp\www\cineBack\protected\models\Peliculas.php (35)
+in C:\wamp\www\cineBack\protected\models\Complejos.php (28)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (20)
+2014/12/06 22:15:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION movietheater.posix_ctermid does not exist. The SQL statement executed was: SELECT id_pelicula,titulo,posix_ctermid(oid) FROM `Peliculas` `t` LIMIT 5' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Peliculas.php(35): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(28): Peliculas::getPeliculas('6')
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(20): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(32): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 03:19:47 [error] [php] Undefined variable: peliculaInfo (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:19:47 [error] [php] Undefined variable: peliculaInfo (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:19:47 [error] [php] Undefined variable: peliculaInfo (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:20:08 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:20:09 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:20:09 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:20:35 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:20:35 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:20:36 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:20:36 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:22:01 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:22:02 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:22:02 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:22:02 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:22:02 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:25:05 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:25:05 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:25:06 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:25:24 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:25:25 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:25:26 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:25:26 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:26:12 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:26:12 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:26:13 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:26:13 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 03:26:24 [error] [php] Undefined variable: peliculas (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 08:39:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:39:49 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(26): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(21): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 08:40:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:40:36 [error] [exception.CDbException] exception 'CDbException' with message 'The table "complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(26): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(21): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 08:41:02 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:41:02 [error] [exception.CDbException] exception 'CDbException' with message 'The table "complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(26): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(21): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 08:41:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:41:03 [error] [exception.CDbException] exception 'CDbException' with message 'The table "complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(26): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(21): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 08:41:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:41:24 [error] [exception.CDbException] exception 'CDbException' with message 'The table "complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(26): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(21): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 08:42:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:42:01 [error] [exception.CDbException] exception 'CDbException' with message 'The table "complejos" for active record class "complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(26): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(21): complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 08:43:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:43:01 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(26): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(21): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 08:44:28 [error] [php] include(Salas.php): failed to open stream: No such file or directory (C:\wamp\www\Yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\cineBack\protected\models\Complejos.php(26): spl_autoload_call()
+#1 C:\wamp\www\cineBack\protected\models\Ciudades.php(21): getComplejosporCiudad()
+#2 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos()
+#3 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#4 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#6 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#7 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#8 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:45:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.salas' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Salas`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:45:50 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Salas" for active record class "Sala" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Sala))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(26): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(21): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 08:51:26 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.salas' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Salas`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:51:26 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Salas" for active record class "Sala" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Sala))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(26): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(21): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+HTTP_REFERER=http://localhost/MovieTheater/cartelera.php?ciudad=Culiac%C3%A1n
+---
+2014/12/07 08:51:52 [error] [php] Undefined variable: respuestas (C:\wamp\www\cineBack\protected\models\Complejos.php:26)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#1 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#3 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#5 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:51:52 [error] [php] Undefined variable: respuestas (C:\wamp\www\cineBack\protected\models\Complejos.php:26)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#1 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#3 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#5 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:52:03 [error] [php] Undefined variable: respuestas (C:\wamp\www\cineBack\protected\models\Complejos.php:26)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#1 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#3 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#5 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:52:04 [error] [php] Undefined variable: respuestas (C:\wamp\www\cineBack\protected\models\Complejos.php:26)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#1 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#3 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#5 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:52:04 [error] [php] Undefined variable: respuestas (C:\wamp\www\cineBack\protected\models\Complejos.php:26)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#1 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#3 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#5 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:52:04 [error] [php] Undefined variable: respuestas (C:\wamp\www\cineBack\protected\models\Complejos.php:26)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#1 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#3 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#5 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:52:27 [error] [php] Undefined variable: respuestas (C:\wamp\www\cineBack\protected\models\Complejos.php:26)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#1 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#3 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#5 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:52:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:52:54 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(26): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(21): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 08:53:44 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (26)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:53:44 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(26): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(21): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 08:56:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (22)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:56:53 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(22): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(21): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 08:57:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (23)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:57:32 [error] [exception.CDbException] exception 'CDbException' with message 'The table "complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(23): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(21): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 08:57:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (23)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (21)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 08:57:32 [error] [exception.CDbException] exception 'CDbException' with message 'The table "complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(23): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(21): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 09:00:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (23)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (15)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 09:00:18 [error] [exception.CDbException] exception 'CDbException' with message 'The table "complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(23): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(15): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 09:00:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (24)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (15)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 09:00:58 [error] [exception.CDbException] exception 'CDbException' with message 'The table "complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(24): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(15): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 09:00:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (24)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (15)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 09:00:59 [error] [exception.CDbException] exception 'CDbException' with message 'The table "complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(24): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(15): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 09:00:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (24)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (15)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 09:00:59 [error] [exception.CDbException] exception 'CDbException' with message 'The table "complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(24): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(15): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 09:01:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movietheater.complejos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `complejos`.
+in C:\wamp\www\cineBack\protected\models\Complejos.php (24)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (15)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 09:01:00 [error] [exception.CDbException] exception 'CDbException' with message 'The table "complejos" for active record class "Complejos" cannot be found in the database.' in C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Complejos))
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\cineBack\protected\models\Complejos.php(24): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\wamp\www\cineBack\protected\models\Ciudades.php(15): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 09:07:43 [error] [exception.CException] exception 'CException' with message 'Peliculas and its behaviors do not have a method or closure named "getPeliculasById".' in C:\wamp\www\Yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getPeliculasByI...', Array)
+#1 C:\wamp\www\cineBack\protected\controllers\ApiController.php(57): CActiveRecord->__call('getPeliculasByI...', Array)
+#2 C:\wamp\www\cineBack\protected\controllers\ApiController.php(57): Peliculas->getPeliculasById('1')
+#3 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionPeliculas()
+#4 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Peliculas')
+#8 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Peliculas')
+#9 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1
+HTTP_REFERER=http://localhost/MovieTheater/peliculaInfo.php?id_pelicula=1
+---
+2014/12/07 09:50:11 [error] [exception.CException] exception 'CException' with message 'Property "Complejos.salasComplejos" is not defined.' in C:\wamp\www\Yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(161): CComponent->__set('salasComplejos', Array)
+#1 C:\wamp\www\Yii\framework\base\CModel.php(607): CActiveRecord->__set('salasComplejos', Array)
+#2 C:\wamp\www\cineBack\protected\models\Complejos.php(27): CModel->offsetSet('salasComplejos', Array)
+#3 C:\wamp\www\cineBack\protected\models\Ciudades.php(15): Complejos::getComplejosporCiudad('Culiac\xC3\xA1n')
+#4 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos('Culiac\xC3\xA1n')
+#5 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#6 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudad')
+#10 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudad')
+#11 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+---
+2014/12/07 09:56:56 [error] [php] include(Salas.php): failed to open stream: No such file or directory (C:\wamp\www\Yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\cineBack\protected\models\Complejos.php(27): spl_autoload_call()
+#1 C:\wamp\www\cineBack\protected\models\Ciudades.php(15): getComplejosporCiudad()
+#2 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos()
+#3 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#4 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#6 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#7 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#8 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\models\Complejos.php (27)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (15)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 09:57:43 [error] [php] Creating default object from empty value (C:\wamp\www\cineBack\protected\models\Sala.php:24)
+Stack trace:
+#0 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos()
+#1 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#2 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#4 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#5 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#6 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\models\Sala.php (24)
+in C:\wamp\www\cineBack\protected\models\Complejos.php (27)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (15)
+2014/12/07 09:58:56 [error] [php] Creating default object from empty value (C:\wamp\www\cineBack\protected\models\Sala.php:24)
+Stack trace:
+#0 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos()
+#1 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#2 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#4 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#5 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#6 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\models\Sala.php (24)
+in C:\wamp\www\cineBack\protected\models\Complejos.php (27)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (15)
+2014/12/07 10:40:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AsientosDisponibles".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('AsientosDisponi...')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('AsientosDisponi...')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/AsientosDis...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cineBack/index.php/api/AsientosDisponibles?ciudad=Culiac%C3%A1n
+---
+2014/12/07 10:41:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AsientosDisponibles".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('AsientosDisponi...')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('AsientosDisponi...')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/AsientosDis...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cineBack/index.php/api/AsientosDisponibles?ciudad=Culiac%C3%A1n
+---
+2014/12/07 10:42:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AsientosDisponibles".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('AsientosDisponi...')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('AsientosDisponi...')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/AsientosDis...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cineBack/index.php/api/AsientosDisponibles?ciudad=Culiac%C3%A1n
+---
+2014/12/07 10:43:03 [error] [php] Undefined variable: resultado (C:\wamp\www\cineBack\protected\models\Sala.php:33)
+Stack trace:
+#0 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos()
+#1 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#2 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#4 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#5 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#6 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\models\Sala.php (33)
+in C:\wamp\www\cineBack\protected\models\Complejos.php (27)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (15)
+2014/12/07 10:44:28 [error] [php] Missing argument 2 for Sala::getSalas(), called in C:\wamp\www\cineBack\protected\models\Complejos.php on line 27 and defined (C:\wamp\www\cineBack\protected\models\Sala.php:23)
+Stack trace:
+#0 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos()
+#1 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#2 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#4 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#5 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#6 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\models\Sala.php (23)
+in C:\wamp\www\cineBack\protected\models\Complejos.php (27)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (15)
+2014/12/07 10:44:57 [error] [php] Undefined variable: resultado (C:\wamp\www\cineBack\protected\models\Sala.php:33)
+Stack trace:
+#0 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos()
+#1 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#2 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#4 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#5 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#6 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\models\Sala.php (33)
+in C:\wamp\www\cineBack\protected\models\Complejos.php (27)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (15)
+2014/12/07 11:10:24 [error] [php] include(Salas.php): failed to open stream: No such file or directory (C:\wamp\www\Yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\cineBack\protected\models\Complejos.php(27): spl_autoload_call()
+#1 C:\wamp\www\cineBack\protected\models\Ciudades.php(15): getComplejosporCiudad()
+#2 C:\wamp\www\cineBack\protected\controllers\ApiController.php(33): Ciudades->getComplejos()
+#3 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionCiudad()
+#4 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#6 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#7 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#8 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Ciudad?ciudad=Culiac%C3%A1n
+in C:\wamp\www\cineBack\protected\models\Complejos.php (27)
+in C:\wamp\www\cineBack\protected\models\Ciudades.php (15)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (33)
+2014/12/07 18:13:07 [error] [exception.CException] exception 'CException' with message 'Sala and its behaviors do not have a method or closure named "getHorarios".' in C:\wamp\www\Yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getHorarios', Array)
+#1 C:\wamp\www\cineBack\protected\controllers\ApiController.php(57): CActiveRecord->__call('getHorarios', Array)
+#2 C:\wamp\www\cineBack\protected\controllers\ApiController.php(57): Sala->getHorarios('1')
+#3 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionPeliculas()
+#4 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Peliculas')
+#8 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Peliculas')
+#9 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1
+HTTP_REFERER=http://localhost/MovieTheater/peliculaInfo.php?id_pelicula=1&numSala=1
+---
+2014/12/07 18:18:12 [error] [exception.CException] exception 'CException' with message 'Sala and its behaviors do not have a method or closure named "getHorarios".' in C:\wamp\www\Yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getHorarios', Array)
+#1 C:\wamp\www\cineBack\protected\controllers\ApiController.php(57): CActiveRecord->__call('getHorarios', Array)
+#2 C:\wamp\www\cineBack\protected\controllers\ApiController.php(57): Sala->getHorarios('1')
+#3 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionPeliculas()
+#4 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Peliculas')
+#8 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Peliculas')
+#9 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1
+HTTP_REFERER=http://localhost/MovieTheater/peliculaInfo.php?id_pelicula=1&numSala=1
+---
+2014/12/07 18:27:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.id_salas' in 'on clause'. The SQL statement executed was: SELECT `t`.`id_sala`, `t`.`numSala`, `t`.`tipoSala`, `t`.`id_complejos` FROM `Salas` `t` INNER JOIN Salas ON t.id_salas = Complejos.id_Salas WHERE Salas.numSala= :value.
+in C:\wamp\www\cineBack\protected\models\Sala.php (43)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (58)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 18:27:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.id_salas' in 'on clause'. The SQL statement executed was: SELECT `t`.`id_sala`, `t`.`numSala`, `t`.`tipoSala`, `t`.`id_complejos` FROM `Salas` `t` INNER JOIN Salas ON t.id_salas = Complejos.id_Salas WHERE Salas.numSala= :value' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Sala.php(43): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\controllers\ApiController.php(58): Sala::getFechas('1')
+#5 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionPeliculas()
+#6 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Peliculas')
+#10 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Peliculas')
+#11 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1
+---
+2014/12/07 18:27:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Complejos.id_sala' in 'on clause'. The SQL statement executed was: SELECT `t`.`id_sala`, `t`.`numSala`, `t`.`tipoSala`, `t`.`id_complejos` FROM `Salas` `t` INNER JOIN Salas ON t.id_sala = Complejos.id_sala WHERE Salas.numSala= :value.
+in C:\wamp\www\cineBack\protected\models\Sala.php (43)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (58)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 18:27:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Complejos.id_sala' in 'on clause'. The SQL statement executed was: SELECT `t`.`id_sala`, `t`.`numSala`, `t`.`tipoSala`, `t`.`id_complejos` FROM `Salas` `t` INNER JOIN Salas ON t.id_sala = Complejos.id_sala WHERE Salas.numSala= :value' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Sala.php(43): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\controllers\ApiController.php(58): Sala::getFechas('1')
+#5 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionPeliculas()
+#6 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Peliculas')
+#10 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Peliculas')
+#11 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1
+---
+2014/12/07 18:35:05 [error] [php] Undefined variable: id (C:\wamp\www\cineBack\protected\models\Sala.php:40)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1
+in C:\wamp\www\cineBack\protected\models\Sala.php (40)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (59)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 18:35:15 [error] [php] Undefined variable: resultados (C:\wamp\www\cineBack\protected\models\Sala.php:41)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1
+in C:\wamp\www\cineBack\protected\models\Sala.php (41)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (59)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 18:35:46 [error] [php] Undefined variable: Salas (C:\wamp\www\cineBack\protected\models\Sala.php:41)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1
+in C:\wamp\www\cineBack\protected\models\Sala.php (41)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (59)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 18:35:54 [error] [php] Undefined variable: resultado (C:\wamp\www\cineBack\protected\models\Sala.php:42)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1
+in C:\wamp\www\cineBack\protected\models\Sala.php (42)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (59)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 18:36:02 [error] [php] Illegal string offset 'numSala' (C:\wamp\www\cineBack\protected\models\Sala.php:42)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1
+in C:\wamp\www\cineBack\protected\models\Sala.php (42)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (59)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 18:36:47 [error] [php] Illegal string offset 'peliculas' (C:\wamp\www\cineBack\protected\models\Sala.php:42)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1
+in C:\wamp\www\cineBack\protected\models\Sala.php (42)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (59)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 18:37:19 [error] [php] Illegal string offset 'peliculas' (C:\wamp\www\cineBack\protected\models\Sala.php:42)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1
+in C:\wamp\www\cineBack\protected\models\Sala.php (42)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (59)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 18:38:47 [error] [php] Illegal string offset 'numSala' (C:\wamp\www\cineBack\protected\models\Sala.php:42)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1
+in C:\wamp\www\cineBack\protected\models\Sala.php (42)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (59)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 18:39:07 [error] [exception.CException] exception 'CException' with message 'Sala and its behaviors do not have a method or closure named "findByPks".' in C:\wamp\www\Yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('findByPks', Array)
+#1 C:\wamp\www\cineBack\protected\models\Sala.php(40): CActiveRecord->__call('findByPks', Array)
+#2 C:\wamp\www\cineBack\protected\models\Sala.php(40): Sala->findByPks('1')
+#3 C:\wamp\www\cineBack\protected\controllers\ApiController.php(59): Sala::getFechas('1')
+#4 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionPeliculas()
+#5 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Peliculas')
+#9 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Peliculas')
+#10 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1
+---
+2014/12/07 18:39:14 [error] [php] Illegal string offset 'numSala' (C:\wamp\www\cineBack\protected\models\Sala.php:42)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1
+in C:\wamp\www\cineBack\protected\models\Sala.php (42)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (59)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 18:40:58 [error] [php] Object of class CDbCriteria could not be converted to string (C:\wamp\www\cineBack\protected\models\Sala.php:44)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1
+in C:\wamp\www\cineBack\protected\models\Sala.php (44)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (59)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 18:54:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Ciudades".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('Ciudades')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudades')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudades')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudades?ciudad=Culiac%C3%A1n
+---
+2014/12/07 20:26:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Ciudades".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('Ciudades')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Ciudades')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Ciudades')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cineBack/index.php/api/Ciudades?ciudad=Culiac%C3%A1n
+---
+2014/12/07 20:33:55 [error] [php] Undefined index: id_pelicula (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1&id_sala=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 20:35:21 [error] [php] Undefined variable: numSala (C:\wamp\www\cineBack\protected\models\Sala.php:41)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id_pelicula=1&numSala=1&id_sala=1
+in C:\wamp\www\cineBack\protected\models\Sala.php (41)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (61)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/07 21:06:21 [error] [exception.CException] exception 'CException' with message 'Horario and its behaviors do not have a method or closure named "getHorarioFecha".' in C:\wamp\www\Yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getHorarioFecha', Array)
+#1 C:\wamp\www\cineBack\protected\models\Fecha.php(26): CActiveRecord->__call('getHorarioFecha', Array)
+#2 C:\wamp\www\cineBack\protected\models\Fecha.php(26): Horario->getHorarioFecha('1')
+#3 C:\wamp\www\cineBack\protected\models\Sala.php(47): Fecha::getFechasSala('1')
+#4 C:\wamp\www\cineBack\protected\controllers\ApiController.php(61): Sala::getFechas('1')
+#5 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionPeliculas()
+#6 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Peliculas')
+#10 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Peliculas')
+#11 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id_pelicula=1&numSala=1&id_sala=1
+---
+2014/12/07 21:06:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Salas.id_fecha' in 'on clause'. The SQL statement executed was: SELECT t.id_horario,t.horario FROM `horario` `t` INNER JOIN fecha ON t.id_fecha = Salas.id_fecha WHERE fecha.id_fecha = :value.
+in C:\wamp\www\cineBack\protected\models\Horario.php (22)
+in C:\wamp\www\cineBack\protected\models\Fecha.php (26)
+in C:\wamp\www\cineBack\protected\models\Sala.php (47)
+2014/12/07 21:06:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Salas.id_fecha' in 'on clause'. The SQL statement executed was: SELECT t.id_horario,t.horario FROM `horario` `t` INNER JOIN fecha ON t.id_fecha = Salas.id_fecha WHERE fecha.id_fecha = :value' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\cineBack\protected\models\Horario.php(22): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\cineBack\protected\models\Fecha.php(26): Horario::getHorarioFecha('1')
+#5 C:\wamp\www\cineBack\protected\models\Sala.php(47): Fecha::getFechasSala('1')
+#6 C:\wamp\www\cineBack\protected\controllers\ApiController.php(61): Sala::getFechas('1')
+#7 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionPeliculas()
+#8 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('Peliculas')
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/Peliculas')
+#13 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\cineBack\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id_pelicula=1&numSala=1&id_sala=1
+---
+2014/12/07 21:07:28 [error] [php] Undefined variable: resultados (C:\wamp\www\cineBack\protected\models\Fecha.php:28)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionPeliculas()
+#1 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#3 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#5 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id_pelicula=1&numSala=1&id_sala=1
+in C:\wamp\www\cineBack\protected\models\Fecha.php (28)
+in C:\wamp\www\cineBack\protected\models\Sala.php (47)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (61)
+2014/12/07 21:56:51 [error] [php] Undefined index: id_pelicula (C:\wamp\www\cineBack\protected\controllers\ApiController.php:57)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/Peliculas?id=1&numSala=1&id_sala=1
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (57)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/08 01:49:21 [error] [php] Undefined variable: venta (C:\wamp\www\cineBack\protected\models\Venta.php:19)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/IniciaNuevaVenta?numBoletos=1&horario=11:00:00&pelicula=Los%20juegos%20del%20Hambre&numSala=1&tipoSala=Digital&tipoVenta=Compra
+in C:\wamp\www\cineBack\protected\models\Venta.php (19)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (52)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/08 01:49:34 [error] [php] Undefined variable: venta (C:\wamp\www\cineBack\protected\models\Venta.php:19)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#2 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/IniciaNuevaVenta?numBoletos=3&horario=11:00&pelicula=sinsajo&numSala=1&tipoSala=digital&tipoVenta=compra
+in C:\wamp\www\cineBack\protected\models\Venta.php (19)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (52)
+in C:\wamp\www\cineBack\index.php (13)
+2014/12/08 02:05:48 [error] [php] Undefined variable: num (C:\wamp\www\cineBack\protected\models\Sala.php:53)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): ApiController->actionIniciaNuevaVenta()
+#1 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\Yii\framework\web\CController.php(286): ApiController->runAction()
+#3 C:\wamp\www\Yii\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#4 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): ApiController->run()
+#5 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\www\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\cineBack\index.php(13): CWebApplication->run()
+REQUEST_URI=/cineBack/index.php/api/IniciaNuevaVenta?numBoletos=3&horario=11:00&pelicula=sinsajo&numSala=1&tipoSala=digital&tipoVenta=compra
+in C:\wamp\www\cineBack\protected\models\Sala.php (53)
+in C:\wamp\www\cineBack\protected\models\Venta.php (23)
+in C:\wamp\www\cineBack\protected\controllers\ApiController.php (51)

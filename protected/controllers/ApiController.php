@@ -14,6 +14,7 @@ class ApiController extends Controller
 		header('Access-Control-Allow-Origin:*');
     	header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
     	header('Access-Control-Allow-Headers: Content-Type, apikey');
+    	header('Content-Type: application/json');
 	}
 
 /**
@@ -40,18 +41,26 @@ ACTIONS PARA OBTENER LAS CIUDADES Y LOS COMPLEJOS
  METODO PARA INICIAR UNA NUEVA VENTA 
 */
 	public function actionIniciaNuevaVenta() {
+			$this->headers();
+			$numBoletos = $_GET['numBoletos'];
+			$horario = $_GET['horario'];
+			$pelicula = $_GET['pelicula'];
+			$numSala = $_GET['numSala'];
+			$tipoSala = $_GET['tipoSala'];
+			$tipoVenta = $_GET['tipoVenta'];
+			$venta= Venta::model()->crearNuevaVenta($numBoletos,$horario,$pelicula,$numSala,$tipoSala,$tipoVenta);
+			$this->result(array("success" => true, "venta" => $venta));
+	}
+/**
+ FUNCION PARA OBTENER LAS PELICULAS POR SALA
+*/
+	public function actionPeliculas() {
 		$this->headers();
-		$numBoletos = $_GET['numBoletos'];
-		$horario = $_GET['horario'];
-		$pelicula = $_GET['pelicula'];
-		$numSala = $_GET['numSala'];
-		$tipoSala = $_GET['tipoSala'];
-		$tipoVenta = $_GET['tipoVenta'];
-		$venta = Venta::model()->crearNuevaVenta($numBoletos,$horario,$pelicula,$numSala,$tipoSala,$tipoVenta);
-		$this->result(array("success" => true, "venta" => $venta));
+		$id_pelicula = $_GET['id_pelicula'];
+		$numSala=$_GET['numSala'];
+		$id_sala = $_GET['id_sala'];
+
+		$peliInfo = Sala::model()->getFechas($id_sala);
+		$this->result(array("success" => true, "peliInfo" => $peliInfo));
 	}
 }
-
-
-//nueva action dar informacion cliente
-//capturo la info y lo envio a venta

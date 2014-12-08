@@ -1,5 +1,4 @@
 <?php
-
 class Peliculas extends CActiveRecord
 {
 	public $id_pelicula;
@@ -14,8 +13,6 @@ class Peliculas extends CActiveRecord
 	public $poster;
 	public $trailer;
 	public $sipnosis;
-
-
 	public function tableName()
 	{
     	return 'Peliculas';
@@ -24,17 +21,13 @@ class Peliculas extends CActiveRecord
     {
         return parent::model($className);
     }
-
     public static function getPeliculas($numSala) {
         $criteria = new CDbCriteria;
-            $criteria->select = 'id_pelicula,titulo';
-            $criteria->limit = 5;
-            $criteria->params = array(":value" => $numSala);
-
-
+            $criteria->select = 'id_pelicula,titulo,poster';
+            $criteria->limit = $numSala;
             return Peliculas::model()->findAll($criteria);
     }
-
-
-
+        public function getPeliculasById($id) {
+        return $this->findByPk($id);
+    }
 }
